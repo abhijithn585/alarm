@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
     return MultiProvider(
       providers: [ChangeNotifierProvider(create: (context) => LocationProvider()),ChangeNotifierProvider(create: (context) => DbController(),),ChangeNotifierProvider(create: (context) => WeatherServiceProvider(),)],
             child: const MaterialApp(
-        debugShowCheckedModeBanner: false,
+        debugShowCheckedModeBanner: true,
         home: HomePage(),
       ),
     );
